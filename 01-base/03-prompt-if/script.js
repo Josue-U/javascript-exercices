@@ -11,6 +11,8 @@
 
 (function() {
 
-  // your code here
+  prompt=("Do you want some cake ?");
+
+  
 
 })();

@@ -11,6 +11,7 @@
 
 (function() {
 
-    // your code here
+    var name = ("Jojo");
+    alert("Hello " + name);
 
 })();
