@@ -15,4 +15,15 @@
 
     // your code here
 
+    var today = new Date();
+    var date = today.toDateString();
+
+
+    document.getElementById("target").innerHTML = date;
+
+
+    // pas fini
+
+    
+
 })();

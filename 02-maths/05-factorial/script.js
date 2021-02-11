@@ -17,6 +17,24 @@
 
         // your code here
 
+
+        var nb = (parseInt(document.getElementById("number").value));
+
+
+        function facto(nb){
+            if (nb == 0){
+
+                return 1;
+            }
+            console.log(nb);
+            return nb * facto(nb-1);
+            
+        }
+
+        alert(facto(nb));
+        
+        
+
     });
 
 })();

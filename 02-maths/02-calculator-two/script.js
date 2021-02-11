@@ -10,10 +10,31 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to get the value of an input: document.getElementById("element-id").value
-
+    var opone = (parseFloat (document.getElementById("op-one").value) );
+    var optwo = (parseFloat (document.getElementById("op-two").value));
+    
     const performOperation = operation => {
         // perform the operation
+
+        
+
+        switch (operation){
+
+            case "addition": 
+            alert(opone + optwo);
+            break;
+            case "substraction": 
+            alert(opone - optwo);
+            break;
+            case "multiplication": 
+            alert(opone * optwo);
+            break;
+            case "division": 
+            alert(opone / optwo);
+            break;
+        }
+        
+       
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>

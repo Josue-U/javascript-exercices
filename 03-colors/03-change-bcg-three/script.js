@@ -13,4 +13,26 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function() {
+
+       var colors =["green","yellow","red","purple","orange","grey","pink","blue","lightblue","black"];
+       
+        
+
+        Array.prototype.sample = function(){  //ramdomisator de tab[]: The function
+            return this[Math.floor(Math.random()*this.length)];
+        }
+          
+        
+        document.querySelector("body").style.backgroundColor = colors.sample();
+        
+
+
+        
+           
+       
+    
+
+    });
+
 })();

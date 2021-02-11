@@ -15,4 +15,24 @@
 
     // your code here
 
+    var ajd = new Date();
+
+    var heure = ajd.getHours();
+
+    console.log(heure);
+
+
+
+   if(heure < 18){
+        document.getElementById("target").innerHTML = "Hello";
+
+    }
+
+    else if(heure >= 18){
+        document.getElementById("target").innerHTML = "Good evening"; 
+
+    }
+
+    
+
 })();

@@ -25,5 +25,14 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        var nTab = fruits.splice(0,1,"banana");
+        var nTab2 = fruits.splice(9,1,"kiwi");
+
+        console.log(fruits);
+    });
+
+    
 
 })();

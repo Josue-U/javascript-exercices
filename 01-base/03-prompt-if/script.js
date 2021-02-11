@@ -11,7 +11,17 @@
 
 (function() {
 
-  prompt=("Do you want some cake ?");
+ 
+var rep = prompt("Do you want some cake ?").toLowerCase();
+
+
+if (rep == "yes"){
+
+  alert("Here some :)");
+}
+else{
+  alert('Make the damn cake for me then !');
+};
 
   
 

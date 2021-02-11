@@ -15,6 +15,22 @@
 
         // your code here
 
+        var x = 0;
+
+        for (x = 2 ; x<=21; x+=2){
+            alert(x*x);
+        }
+
+        // réessayer avec x%2 = 0  dans un while if (i*i%2 == 0){}
+
+        
+
+       
+
+        
+
+        
+
     });
 
 })();

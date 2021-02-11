@@ -11,6 +11,20 @@
 
 (function() {
 
-    // your code here
+    
+
+    while (r != true){
+    
+    var age= prompt("What's yours age ?");
+    var gender= prompt("What's your gender ?");
+    var town= prompt("Where are you from ?");
+
+    alert(age);
+    alert(gender);
+    alert(town);
+
+    var r=confirm("It's all ok ?");
+    
+    }
 
 })();

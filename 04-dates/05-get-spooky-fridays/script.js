@@ -12,5 +12,27 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        var year =document.getElementById("year").value;
+
+        var d = new Date(year);
+        d.setDate(13);
+
+        for (var i =0; i <= 11 ; i++){
+
+            d.setMonth(i);
+            var day = d.getDay();
+
+            if (day == 5){
+                console.log(d);
+            }
+
+        }
+
+
+        
+
+    });
 
 })();

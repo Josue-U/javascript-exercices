@@ -91,4 +91,21 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function() {
+
+        
+            
+        //people.forEach(element =>console.log(element["firstname"],element["lastname"], element["age"] > 18 ));
+
+        const tab = people.filter(people => people.age > 18);
+
+        console.log(tab);
+
+
+
+        
+    });
+
+
+
 })();

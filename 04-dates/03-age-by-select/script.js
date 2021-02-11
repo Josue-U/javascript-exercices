@@ -13,4 +13,45 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function() {
+
+        var current = new Date();
+
+        var cdms = Date.now(); // en millisecond depuis 1970?
+
+        var currentDate = current.toDateString();
+        var currentDay = current.getDay();
+        var currentMonth = current.getMonth() + 1;
+        var currentYear = current.getFullYear();
+
+        //il faut que l'année passe  à la suivnte lorsque dobmonth > month alors si dobday > day = on peut ajouté +1 à l'age 
+
+       // var dob =  new Date();//(dobYear,dobMonth - 1,dobDay);
+
+        var dobDay = document.getElementById("dob-day").value;
+        var dobMonth = document.getElementById("dob-month").value;
+        var dobYear = document.getElementById("dob-year").value;
+
+        var age = currentYear - dobYear;
+
+        if (currentMonth <= dobMonth & currentDay < dobDay){
+            console.log(age -1);
+        }
+
+        else{
+            console.log(age);
+        }
+
+
+
+
+
+
+
+        
+
+    
+
+    });
+
 })();
