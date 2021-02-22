@@ -28,4 +28,22 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function() {
+
+        var found = fruits.find(element => element == "apple");
+
+
+        if ("apple" == found){
+            console.log("Yes");
+
+        }
+        else{
+            console.log("No");
+        }
+
+
+        //console.log(fruits.includes("apple")); // autre super bonne soluce
+
+    });
+
 })();

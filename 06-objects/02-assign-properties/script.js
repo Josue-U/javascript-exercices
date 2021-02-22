@@ -27,4 +27,15 @@
         user: null,
     };
     // your code here
+
+    const majComp = Object.assign(computers, defaultProps);
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        console.log(majComp);
+
+
+
+    });
+
 })();
