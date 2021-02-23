@@ -28,13 +28,21 @@
     };
     // your code here
 
-    const majComp = Object.assign(computers, defaultProps);
+   
 
     document.getElementById("run").addEventListener("click", function() {
 
-        console.log(majComp);
+        let obj = []
 
+        computers.forEach( el => {
+            el = {...defaultProps, ...el }
+            obj.push(el)
+        })
+        computers.splice(0, computers.length , ...obj)  // le 0 est la position dans laquelle on veut effectuer le remplacement
 
+        console.log(computers)
+
+        //soluce Nico
 
     });
 

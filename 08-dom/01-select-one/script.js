@@ -13,4 +13,6 @@
 
     // your code here
 
+    document.querySelector("#target").innerHTML = "You just got owned !";
+
 })();

@@ -30,7 +30,7 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        var found = fruits.find(element => element == "apple");
+        /*var found = fruits.find(element => element == "apple");
 
 
         if ("apple" == found){
@@ -39,10 +39,10 @@
         }
         else{
             console.log("No");
-        }
+        }*/
 
 
-        //console.log(fruits.includes("apple")); // autre super bonne soluce
+        console.log(fruits.includes("apple")); // autre super bonne soluce
 
     });
 
