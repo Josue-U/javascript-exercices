@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+    document.querySelector("#run").addEventListener("click", async () => {
+        const posts = await window.lib.getPosts();
+
+        const postComments = await Promise.all(
+            posts.map( (post) => window.lib.getComments(post.id)),
+        );
+
+        postComments.forEach( (comments, i) => {
+            posts[i].comments = comments;
+        });
+        console.log(posts);
+    });
 })();

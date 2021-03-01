@@ -13,7 +13,11 @@
 
     // your code here
 
-    document.querySelector(".material").innerHTML = "owned";
+    var myTarget = document.getElementsByClassName("target");
+
+    for (var i = 0; i < myTarget.length; i ++){
+        myTarget[i].innerHTML = "Owned";
+    }
     
 
 })();

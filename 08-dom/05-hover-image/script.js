@@ -13,14 +13,12 @@
 
     // your code here
 
-    
-    
-    
-   
+    var img = document.querySelector(".material figure img");
+    var newImage = img.getAttribute("data-hover");
+    var oldImage = img.getAttribute("src");
 
-    document.querySelector("data-hover").onmouseover().src = "../../_shared/img/kiss-wink-heart.svg";
-    document.querySelector("data-hover").onmouseout().src = "../../_shared/img/kiss.svg" ;
-    
+    img.removeAttribute("src");
 
-
+    img.onmouseover = () => {img.src = newImage};
+    img.onmouseout = () => {img.src = oldImage};
 })();

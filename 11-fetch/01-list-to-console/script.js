@@ -11,4 +11,10 @@
 
 (() => {
     // your code here
+    document.querySelector("#run").addEventListener("click", async () =>{
+        const response = await fetch("http://localhost:3000/heroes");
+        const heroes = await response.json();
+
+        console.log(heroes);
+    });
 })();

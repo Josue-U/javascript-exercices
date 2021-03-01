@@ -11,4 +11,23 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        window.lib.getPosts ( function (error, array) {
+
+            if(error){
+                console.log(error);
+            }
+
+            else{
+                console.log(array);
+            }
+            
+            
+        } ) ;
+
+
+    });
+    
 })();

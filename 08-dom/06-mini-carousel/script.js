@@ -20,5 +20,18 @@
     ];
 
     // your code here
+    const button = document.getElementById("next");
+    let x = 1;
+    let image = document.querySelector("img");
+
+    button.onclick = () => {
+        console.log(x);
+        image.src = gallery[x];
+        x++;
+
+        if(x == 5){
+            x = 0;
+        }
+    }
 
 })();

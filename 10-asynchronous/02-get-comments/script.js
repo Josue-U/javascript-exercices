@@ -11,4 +11,39 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        window.lib.getPosts ( function(error,array){
+
+            let tabPost = array;
+            //console.log(tabA);//test
+            
+            tabPost.forEach(element =>  {
+
+                window.lib.getComments(element.id, function(error,comments){
+
+                    
+                    if(error){
+                        console.log(error);
+                    }
+                    else{
+                        //console.log(array); // comments from users
+                        tabPost.push(comments);
+                        console.log(tabPost); //FINAL result
+                    }                    
+
+                });
+                
+            });
+
+
+        
+        /* */    
+          
+             
+        });
+
+    });
+
 })();

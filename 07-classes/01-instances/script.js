@@ -17,4 +17,11 @@
         }
     }
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        
+        let myCat1 = new Cat("Skitty", "9 years old");
+        let myCat2 = new Cat("Pixel", "6 years old");
+        console.log(myCat1);
+        console.log(myCat2);
+    });
 })();

@@ -11,4 +11,15 @@
 
 (() => {
     // your code here
+
+    
+    
+
+    document.getElementById("run").addEventListener("click", function() {
+    
+        window.lib.getPosts().then(function getPosts(array){
+            console.log(array);
+        });
+        
+    });
 })();

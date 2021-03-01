@@ -29,5 +29,7 @@
     ];
 
     // your code here
+    let sorted = [... new Set(fruits)];
+    console.log(sorted);
 
 })();

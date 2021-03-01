@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+    document.querySelector("#run").addEventListener("click", async () => {
+        try{
+            const persons = await window.lib.getPersons();
+            console.log(persons);
+        }
+        catch (err){
+            console.error(err);
+        }
+        finally{ // n'est pas utile pour l'exe mais c'est bien de la voir
+            console.log("Test"); // s'affiche peu importe
+        }
+    });
 })();
